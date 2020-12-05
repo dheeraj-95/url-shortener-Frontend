@@ -37,7 +37,7 @@ async function bitlyFy(longLink) {
         req_by: user,
         longLink: longLink,
     }
-    let response = await fetch('https://urlshortener-backend-heroku.herokuapp.com/bitly', {
+    let response = await fetch('https://urlshortener-backend-heroku.herokuapp.com/bitlyFy', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: {
