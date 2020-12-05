@@ -21,7 +21,7 @@ function validURL(longUrl) {
         '(\\?[;&amp;a-z\\d%_.~+=-]*)?' + 
         '(\\#[-a-z\\d_]*)?$', 'i');
     if (pattern.test(longUrl)) {
-        bitly(longUrl)
+        bitlyFy(longUrl)
     } else {
         custom_alert('warning', 'Invalid Url !!')
         btn.innerHTML = "bitly"
@@ -29,7 +29,7 @@ function validURL(longUrl) {
 }
 
 
-async function bitly(longLink) {
+async function bitlyFy(longLink) {
     // console.log(longLink)
     sendbtn.innerHTML = 'Wait..'
     sendbtn.disabled = true
